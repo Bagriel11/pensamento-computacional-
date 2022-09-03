@@ -1,35 +1,106 @@
+<title>Abas</title>
 <style>
-	div.abas p
-                {
-     
-
-
-
-
-
-
-
-
-
-
-
-<a href ="#Aba1">primeira pg</a>
-
-<a href ="#Aba2">segunda  pg</a>
-
-<a href ="#Aba3">terceira pg</a>
-
-<a href =" default"> Limpar</a>
-
-<div class =" aba"> 
 	
-	<p id= "aba1"> my text </p>
+	*{
+		margin: 0;
+		padding: 0;
+	}
 	
-	<p id= "aba2"> my text </p>
+	body{
+		background-color: #ddd;
+	font-family: 'Arial' ;
+	}
 	
-	<p id= "aba3"> my text </p>
+	.nav_tabs{
+		width: 600px;
+		height: 400px;
+		margin: 100px auto;
+		background-color: #fff;
+	position: relative;
+	}
 	
-	<p id =" default " ></p>
-	 
+	.nav_tabs ul{
+		list-style: none;
+		}
+		
+	.nav_tabs ul li{
+		float: left;
+	}
+	
+	.nav_tabs label{
+		width: 100px;
+		padding: 25px;
+		background-color: #363b48;
+		display: block;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+		}
+		
+		.rd_tabs:checked ~ label{
+			background-color: #e54e43;
+	}
+		.rd_tabs{
+			display: none;
+	}
+	.content{
+		border-top: 5px solid #e54e43;
+		background-color: #fff;
+		display: none;
+		position: absolute;
+		height: 320px;
+		width: 600px;
+		left: 0;
+		}
+	
+.rd_tabs: checked ~ .content{
+		display: block;
+		}
 	
 	
+	
+	
+	
+	</style>
+	</head>
+	       <body>
+		
+		<nav class="nav_tabs">
+			<ul>
+				<li>
+					<input type="radio" name="tabs" class="rd_tabs" id="tab1"
+					checked>
+						<label for="tab1">Tab 1</label>
+						<div class="content">
+         <article>
+
+       
+        </article>
+</div>
+  </li>
+		<li>
+					<input type="radio" name="tabs" class="rd_tabs" id="tab2">
+						<label for="tab2">Tab 2</label>
+						<div class="content">
+           <article>
+Jujubas roxas são melhores
+          </article>
+</div>
+		</li>
+		<li>
+					<input type="radio" name="tabs" class="rd_tabs" id="tab3">
+						<label for="tab3">Tab 3</label>
+						<div class="content">
+        <article>
+        	Jujubas rosas são mais gostosas
+        </article>
+</div>
+		</li>
+		</ul>
+		</nav>
+		</body>
+		</html>
+		
+	
+		
+		
